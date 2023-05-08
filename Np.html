@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .logo{
+        display: inline-block;
+    }
+    header{
+        background-color:rgb(150, 216, 194);
+        padding: 10px;
+    }
+    footer{
+        background-color :rgb(150, 216, 194);
+        padding: 10px;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        color: white;
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+     }
+     body{
+        margin: auto 0;
+     }
+     a{
+        text-decoration: underline,uppercase;
+        color: white;
+        margin-top: 2px;
+        margin-right: 2px;
+    }
+    .p1{
+        font-family: Arial, Helvetica, sans-serif;
+        color:white;
+        position: relative;
+    }
+    p{
+        font-size: small;
+    }
+    .c{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: 100%;
+        margin:auto 0;
+     }
+    form{
+       display: flex;
+       flex-direction: column;
+       justify-content:space-around;
+       align-items:center;
+       grid-template-columns: repeat(1,5);
+       grid-row: 2/4;
+       grid-column: 1/span4;
+    }
+    input{
+       
+       cursor: pointer;
+       box-shadow: 8px;
+        background-color: lightgrey;
+        box-shadow:5px;
+        transform: translateY(5px);
+
+    }
+    h2{
+        font-style: initial;
+        font-size: 40px;
+        color: white;
+        display: inline-flex;
+    }
+    </style>
+   
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src ="Nlogo.jpg"width="80px"height="80px" alt="logo introuvable">
+        </div>
+        <h2><b>NÉMEZ</b></h2>
+        <nav>
+            <a href="index.html">
+            Home
+            </a>
+        </nav>
+    </header>   
+     <form>
+        <h2><u>Sign In</u></h2>
+        <label><b>First Name</b></label>
+        <input type="text" required><hr>
+        <label><b>Last Name</b></label>
+        <input type="text"required><hr>
+        <label><b>Phone number</b></label>
+        <input type="number"required><hr>
+        <label><b>E-mail</b></label>
+        <input type="email"required><hr>
+        <label><b>Password</b></label>
+        <input type="password" min="5" max="10" required>
+            <p>*password must be between 5 and 10 characters*</p><hr>   
+        <input type="Submit"value="Register">
+    </form>
+    <div class="c">
+        <div clas="background">
+            <img src="Némez.jpg">"
+        </div>
+    </div>
+    <script src="script.js"></script>
+     
+    <footer>
+        <p1>
+           <b>  © 2023 Shopping Website.</b>
+        </p1>
+    </footer>
+</body>
+</html>
