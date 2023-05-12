@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thrift Shopping Website</title>
+    <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/4558c7dd96.js" crossorigin="anonymous"></script>
     <style>
         *{
@@ -40,10 +41,9 @@ footer{
     text-align: center;
  }
 body{
-    margin: auto 0;
     width: 100%;
     height: 100vh;
-    background-image: rgb(255, 243, 241);
+    background-image:url(backgroundb.jpg.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -76,7 +76,6 @@ span{
     line-height: 20px;
     color:rgb(245, 196, 187);
 }
-
 .navbar ul li{
     list-style: none;
     display: inline-block;
@@ -113,45 +112,89 @@ span{
 .icons a:hover{
     color: var(--white);
 }
-.b{    
- display: flex;
- flex-wrap: wrap;
- margin: 100px;
- justify-content: space-around;
- display: grid;
- grid-gap: 100px;
- grid-template-columns: repeat(autofill);
- display: inline-flex;
+form{
+    border:3px solid rgb(245, 196, 187) ;
+    width: 500px;
+    height: 400px;
+    position: relative;
+    left: 500px;
+    top: 100px;
+    border-radius: 20px;
+    box-shadow: 2px 2pxrgba(101, 243, 193, 0.788);
+    background-color:rgb(235, 233, 233);
+    padding: 25px;
 }
-.item{
- height: 350px;
- width: 300px;
- position: relative;
- padding: 100px;
+
+label{
+   color: black;
+   position: relative;
+   top: 30px;
+   margin-left: 30px;
+}
+input{
+    position: relative;
+    top: 30px;
+    box-shadow:  2px 2px rgb(245, 196, 187);
+}
+input:hover{
+    box-shadow:  3px 3px rgb(226, 223, 223);
+    border-radius: 5px;
+}
+h2{
+    color:black;
+    position: relative;
+    margin: auto;
+    left: 170px;
+}
+h4{
+    color:black;
+    position: relative;
+    margin: auto;
+    left: 170px;
 }
 p{
-    font-family:initial;
-    font-size:15px;
-    color: rgb(0, 0, 0);
-    position: relative;
-    left: 30%;
-}
-span{
-    font-size: 15px;
-    position: relative;
-    left:30%;
+        font-size: 10px;
+
 }
 button{
     position: relative;
-    left: 200px;
-    top: 25px;
-}
-button a{
+    padding: 5px 10px;
+    margin: auto;
+    left: 380px;
+    background-color: rgb(245, 196, 187);
+    border: black;
+    border-radius: 8px;
     color: black;
 }
-button a:hover{
-    color: var(--rgb(245, 196, 187));
+button:hover{
+    border: 2px solid  black;
+    color: black;
+    box-shadow: 3px 3px whitesmoke;
+    
+    
 }
+input{
+    position: relative;
+    margin-left: 10px;
+    background-color: transparent ;
+    border: 2px solid transparent;
+}
+#inp1,#inp2,#inp3,#inp4,#inp5{
+    position: relative;
+    margin-left: 60px;
+}
+.form{
+
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(backgroundb.jpg.jpeg) ;
+    background-size: cover;
+    background-position: left;
+    margin: -10px;
+    }
+   
+
     </style>
 </head>
 <body>
@@ -175,39 +218,21 @@ button a:hover{
         </div>
     
     </header>
-    <div class="b">
+    <div class="form">
+        <form action="">
+            
+            <h2>Sign Up</h2>
 
-        <div class="item"><img src="kitem1.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-             <p><b>Pink Dress / Girls </b></p>
-             <span style="color: darkgreen;"><b>15,00£</b></span>
-             <button>
-                <a href="#" class="fas fa-heart"></a>
-             </button>
-             <button>
-                <a href="#" class="fas fa-shopping-cart"></a>
-             </button>
-        </div>
-        <div class="item"><img src="kitem2.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-            <p><b>Baby Heart Set</b></p>
-            <span style="color: darkgreen;"><b>10,00£</b></span>
-            <button>
-                <a href="#" class="fas fa-heart"></a>
-             </button>
-             <button>
-                <a href="#" class="fas fa-shopping-cart"></a>
-             </button>
-        </div>
-        <div class="item"><img src="kitem3.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-            <p><b>Jogging Set </b></p>
-            <span style="color: darkgreen;"><b>12,50£</b></span>
-            <button>
-                <a href="#" class="fas fa-heart"></a>
-             </button>
-             <button>
-                <a href="#" class="fas fa-shopping-cart"></a>
-             </button>
-        </div>
-    </div>          
+            <Label>Enter your First Name:</Label> <input type="text" required id="inp1" > <br> <br>
+            <label >Enter your Last Name:</label> <input type="text" required id="inp2"> <br> <br>
+            <label>Enter your E-mail:</label> <input type="email" required id="inp3"> <br> <br>
+            <label>Enter your Phone Number:</label> <input type="number" id="inp4"> <br> <br> 
+            <label>Enter your Password:</label> <input type="password" min="5" max="10" required id="inp5"> <br> <br> <br><br>
+            <p>*password must be between 5 and 10 characters*</p><br><br>
+            <button>Register</button> <br>
+            <h4> You already have an account?  </h4>
+        </form>
+    </div>
     <footer>
         
         <p1>

@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: initial;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(252, 229, 229);
+    padding:20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0rem 0.2rem rgb(245, 196, 187);
+}
+footer{
+    background-color:rgb(245, 196, 187);
+    padding: 10px;
+    position:fixed;
+    bottom: 0px;
+    left: 0px;
+    color: black;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+ }
+body{
+    width: 100%;
+    height: 100vh;
+    background-image:url(background.jpg.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+html{
+    font-size: 88%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem ;
+    overflow: hidden;
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h1{
+    font-style: initial;
+    font-size: 50px;
+    color: black;
+    display: inline-flex;
+    width: 100px;
+    cursor: pointer;
+}
+span{
+    font-style: initial;
+    margin: 20px auto;
+    font-size: 50px;
+    line-height: 20px;
+    color:rgb(245, 196, 187);
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    right: -350px;
+}
+.navbar ul li a{
+    font-style: initial;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+    padding: 1rem;
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: rgb(245, 196, 187);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.icons a{
+    font-size: 15px;
+    color:black;
+    margin-left: 10px;
+}
+.icons a:hover{
+    color: var(--white);
+}
+h2{
+    font-size: 50px;
+    margin-top: 80px;
+}
+p{
+    font-size: 30px;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: black;
+}
+.btn{
+    width: 200px;
+    padding: 20px 20px;
+    text-align: center;
+    margin: 25px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 3px solid black;
+    background: transparent;
+    color:black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span1{
+    background: rgb(245, 196, 187);
+    height: 100%;
+    width:0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: 0.5s;
+}
+.btn:hover span1{
+    width: 100%;
+}
+.btn:hover{
+    border: none;
+}
+
+
+

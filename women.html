@@ -4,207 +4,217 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thrift Shopping Website</title>
+    <script src="https://kit.fontawesome.com/4558c7dd96.js" crossorigin="anonymous"></script>
     <style>
-        .logo{
-            display: inline-block;
-        }
-        nav{
-            display: flex;
-            flex-direction: column;
-            float:right;
-        }
-        header{
-            background-color:rgb(150, 216, 194);
-            padding: 10px;
-            padding: 10px;
-            
-            top: 0px;
-            left: 0px;
-            width: 100%;
-           
-        }
-        footer{
-            background-color :rgb(150, 216, 194);
-            padding: 10px;
-            position:fixed;
-            bottom: 0px;
-            left: 0px;
-            color: white;
-            font-size: 20px;
-            width: 100%;
-            text-align: center;
-         }
-         body{
-            margin: auto 0;
-         }
-         .b{
-            
-        display: flex;
-        flex-wrap: wrap;
-        margin: 20px;
-        justify-content: space-around;
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: initial;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(252, 229, 229);
+    padding:20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0rem 0.2rem rgb(245, 196, 187);
+}
+footer{
+    background-color:rgb(245, 196, 187);
+    padding: 10px;
+    position:fixed;
+    bottom: 0px;
+    left: 0px;
+    color: black;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+ }
+body{
+    margin: auto 0;
+    width: 100%;
+    height: 100vh;
+    background-image: rgb(255, 243, 241);
+    background-size: cover;
+    background-position: center;
+}
+html{
+    font-size: 88%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem ;
+    overflow: hidden;
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h1{
+    font-style: initial;
+    font-size: 50px;
+    color: black;
+    display: inline-flex;
+    width: 100px;
+    cursor: pointer;
+}
+span{
+    font-style: initial;
+    margin: 20px auto;
+    font-size: 50px;
+    line-height: 20px;
+    color:rgb(245, 196, 187);
+}
 
-        display: flex;
-        flex-direction: row;
-        margin: 20px;
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(autofill);
-        display: inline-flex;
-         }
-         .item{
-        
-        height: 350px;
-        width: 300px;
-        position: relative;
-        padding: 50px;
-        
-    
-         }
-         a{
-            text-decoration: underline,uppercase;
-            font-size: 20px;
-            color: white;
-            margin-top: 2px;
-            margin-right: 2px;
-        }
-        .p1{
-            font-family: Arial, Helvetica, sans-serif;
-            color:white;
-           
-        }
-        h2{
-        font-style: initial;
-        font-size: 40px;
-        color: white;
-        display: inline-flex;
-    }
-    
-    </style>    
-        
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    right: -350px;
+}
+.navbar ul li a{
+    font-style: initial;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+    padding: 1rem;
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: rgb(245, 196, 187);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.icons a{
+    font-size: 15px;
+    color:black;
+    margin-left: 10px;
+}
+.icons a:hover{
+    color: var(--white);
+}
+.b{    
+ display: flex;
+ flex-wrap: wrap;
+ margin: 100px;
+ justify-content: space-around;
+ display: grid;
+ grid-gap: 100px;
+ grid-template-columns: repeat(autofill);
+ display: inline-flex;
+}
+.item{
+ height: 350px;
+ width: 300px;
+ position: relative;
+ padding: 100px;
+}
+p{
+    font-family:initial;
+    font-size:15px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    left: 30%;
+}
+span{
+    font-size: 15px;
+    position: relative;
+    left:30%;
+}
+button{
+    position: relative;
+    left: 200px;
+    top: 25px;
+}
+button a{
+    color: black;
+}
+button a:hover{
+    color: var(--rgb(245, 196, 187));
+}
+    </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-        <img src ="Nlogo.jpg"width="80px"height="80px" alt="logo introuvable">
+
+        <h1><b>NÉMEZ</b><span>.</span></h1>
+  
+        <nav class="navbar">
+                
+             <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="tips.html">Tips</a></li>
+             </ul>
+        </nav>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="signup.html" class="fas fa-user"></a>
         </div>
-        <h2><b>NÉMEZ</b></h2>
-        <nav>
-            <a href="index.html">
-            Home
-            </a>
-            </nav>
-    </header>   
-        
     
-<div class="b">
+    </header>
+    <div class="b">
 
-
-<div class="item"><img src="witem1.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-     <p><b>Wide Leg Jeans</b></p>
-     <span style="color: darkgreen;"><b>15,30£</b></span>
-     <button>LIKE</button>
-     <button>ADD TO CART</button>
-</div>
-<div class="item"><img src="witem2.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-    <p><b>Blazer</b></p>
-    <span style="color: darkgreen;"><b>25,50</b></span>
-    <button>LIKE</button>
-    <button>ADD TO CART</button>
-</div>
-<div class="item"><img src="witem3.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-    <p><b>Blue Mid Dress </b></p>
-    <span style="color: darkgreen;"><b>20,40£</b></span>
-    <button>LIKE</button>
-    <button>ADD TO CART</button>
-</div>
-<div class="item"><img src="witem4.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-    <p><b>Black Mini Skirt</b></p>
-    <span style="color: darkgreen;"><b>12,20£</b></span>
-    <button>LIKE</button>
-    <button>ADD TO CART</button>
-</div>
-<div class="item"><img src="witem1.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-    <p><b>Wide Leg Jeans</b></p>
-    <span style="color: darkgreen;"><b>15,30£</b></span>
-    <button>LIKE</button>
-    <button>ADD TO CART</button>
-</div>
-<div class="item"><img src="witem2.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-   <p><b>Blazer</b></p>
-   <span style="color: darkgreen;"><b>25,50</b></span>
-   <button>LIKE</button>
-   <button>ADD TO CART</button>
-</div>
-<div class="item"><img src="witem3.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-   <p><b>Blue Mid Dress </b></p>
-   <span style="color: darkgreen;"><b>20,40£</b></span>
-   <button>LIKE</button>
-   <button>ADD TO CART</button>
-</div>
-<div class="item"><img src="witem4.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-   <p><b>Black Mini Skirt</b></p>
-   <span style="color: darkgreen;"><b>12,20£</b></span>
-   <button>LIKE</button>
-   <button>ADD TO CART</button>
-</div>
-<div class="item"><img src="witem1.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-    <p><b>Wide Leg Jeans</b></p>
-    <span style="color: darkgreen;"><b>15,30£</b></span>
-    <button>LIKE</button>
-    <button>ADD TO CART</button>
-</div>
-<div class="item"><img src="witem2.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-   <p><b>Blazer</b></p>
-   <span style="color: darkgreen;"><b>25,50</b></span>
-   <button>LIKE</button>
-   <button>ADD TO CART</button>
-</div>
-<div class="item"><img src="witem3.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-   <p><b>Blue Mid Dress </b></p>
-   <span style="color: darkgreen;"><b>20,40£</b></span>
-   <button>LIKE</button>
-   <button>ADD TO CART</button>
-</div>
-<div class="item"><img src="witem4.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-   <p><b>Black Mini Skirt</b></p>
-   <span style="color: darkgreen;"><b>12,20£</b></span>
-   <button>LIKE</button>
-   <button>ADD TO CART</button>
-</div>
-<div class="item"><img src="witem1.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-    <p><b>Wide Leg Jeans</b></p>
-    <span style="color: darkgreen;"><b>15,30£</b></span>
-    <button>LIKE</button>
-    <button>ADD TO CART</button>
-</div>
-<div class="item"><img src="witem2.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-   <p><b>Blazer</b></p>
-   <span style="color: darkgreen;"><b>25,50</b></span>
-   <button>LIKE</button>
-   <button>ADD TO CART</button>
-</div>
-<div class="item"><img src="witem3.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-   <p><b>Blue Mid Dress </b></p>
-   <span style="color: darkgreen;"><b>20,40£</b></span>
-   <button>LIKE</button>
-   <button>ADD TO CART</button>
-</div>
-<div class="item"><img src="witem4.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
-   <p><b>Black Mini Skirt</b></p>
-   <span style="color: darkgreen;"><b>12,20£</b></span>
-   <button>LIKE</button>
-   <button>ADD TO CART</button>
-</div>
-
-
-</div>
-
+        <div class="item"><img src="witem1.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
+             <p><b>Flare Jeans</b></p>
+             <span style="color: darkgreen;"><b>15,00£</b></span>
+             <button>
+                <a href="#" class="fas fa-heart"></a>
+             </button>
+             <button>
+                <a href="#" class="fas fa-shopping-cart"></a>
+             </button>
+        </div>
+        <div class="item"><img src="witem2.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
+            <p><b>Grey Blazer</b></p>
+            <span style="color: darkgreen;"><b>10,00£</b></span>
+            <button>
+                <a href="#" class="fas fa-heart"></a>
+             </button>
+             <button>
+                <a href="#" class="fas fa-shopping-cart"></a>
+             </button>
+        </div>
+        <div class="item"><img src="witem3.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
+            <p><b>Blue Midi Dress </b></p>
+            <span style="color: darkgreen;"><b>12,50£</b></span>
+            <button>
+                <a href="#" class="fas fa-heart"></a>
+             </button>
+             <button>
+                <a href="#" class="fas fa-shopping-cart"></a>
+             </button>
+        </div>
+       
+    </div>    
     <footer>
+        
         <p1>
-            <b>  © 2023 Shopping Website.</b>
-        </p1>
+           <b>  © 2023 Thrift Shopping Website.</b>
+       </p1>
+   
     </footer>
 </body>
 </html>
