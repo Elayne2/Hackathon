@@ -5,154 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thrift Shopping Website</title>
+    <link rel="stylesheet" href="css/prd.css">
     <script src="https://kit.fontawesome.com/4558c7dd96.js" crossorigin="anonymous"></script>
-    <style>
-        *{
-    margin: 0;
-    padding: 0;
-    font-family: initial;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-}
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgb(252, 229, 229);
-    padding:20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0rem 0.2rem rgb(245, 196, 187);
-}
-footer{
-    background-color:rgb(245, 196, 187);
-    padding: 10px;
-    position:fixed;
-    bottom: 0px;
-    left: 0px;
-    color: black;
-    font-size: 20px;
-    width: 100%;
-    text-align: center;
- }
-body{
-    margin: auto 0;
-    width: 100%;
-    height: 100vh;
-    background-image: rgb(255, 243, 241);
-    background-size: cover;
-    background-position: center;
-}
-html{
-    font-size: 88%;
-    scroll-behavior: smooth;
-    scroll-padding-top: 6rem ;
-    overflow: hidden;
-}
-.navbar{
-    width: 80%;
-    margin: auto;
-    padding: 30px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-h1{
-    font-style: initial;
-    font-size: 50px;
-    color: black;
-    display: inline-flex;
-    width: 100px;
-    cursor: pointer;
-}
-span{
-    font-style: initial;
-    margin: 20px auto;
-    font-size: 50px;
-    line-height: 20px;
-    color:rgb(245, 196, 187);
-}
-
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-    right: -350px;
-}
-.navbar ul li a{
-    font-style: initial;
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    position: relative;
-    padding: 1rem;
-}
-.navbar ul li::after{
-    content:'';
-    height: 3px;
-    width: 0;
-    background: rgb(245, 196, 187);
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-}
-.navbar ul li:hover:after{
-    width: 100%;
-}
-.icons a{
-    font-size: 15px;
-    color:black;
-    margin-left: 10px;
-}
-.icons a:hover{
-    color: var(--white);
-}
-.b{    
- display: flex;
- flex-wrap: wrap;
- margin: 100px;
- justify-content: space-around;
- display: grid;
- grid-gap: 100px;
- grid-template-columns: repeat(autofill);
- display: inline-flex;
-}
-.item{
- height: 350px;
- width: 300px;
- position: relative;
- padding: 100px;
-}
-p{
-    font-family:initial;
-    font-size:15px;
-    color: rgb(0, 0, 0);
-    position: relative;
-    left: 30%;
-}
-span{
-    font-size: 15px;
-    position: relative;
-    left:30%;
-}
-button{
-    position: relative;
-    left: 200px;
-    top: 25px;
-}
-button a{
-    color: black;
-}
-button a:hover{
-    color: var(--rgb(245, 196, 187));
-}
-    </style>
 </head>
 <body>
     <header>
@@ -177,7 +31,7 @@ button a:hover{
     </header>
     <div class="b">
 
-        <div class="item"><img src="kitem1.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
+        <div class="item"><img src="images/kitem1.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
              <p><b>Pink Dress / Girls </b></p>
              <span style="color: darkgreen;"><b>15,00£</b></span>
              <button>
@@ -187,7 +41,7 @@ button a:hover{
                 <a href="#" class="fas fa-shopping-cart"></a>
              </button>
         </div>
-        <div class="item"><img src="kitem2.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
+        <div class="item"><img src="images/kitem2.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
             <p><b>Baby Heart Set</b></p>
             <span style="color: darkgreen;"><b>10,00£</b></span>
             <button>
@@ -197,7 +51,7 @@ button a:hover{
                 <a href="#" class="fas fa-shopping-cart"></a>
              </button>
         </div>
-        <div class="item"><img src="kitem3.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
+        <div class="item"><img src="images/mitem3.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
             <p><b>Jogging Set </b></p>
             <span style="color: darkgreen;"><b>12,50£</b></span>
             <button>
@@ -207,6 +61,97 @@ button a:hover{
                 <a href="#" class="fas fa-shopping-cart"></a>
              </button>
         </div>
+        <div class="item"><img src="images/kitem1.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
+            <p><b>Pink Dress / Girls </b></p>
+            <span style="color: darkgreen;"><b>15,00£</b></span>
+            <button>
+               <a href="#" class="fas fa-heart"></a>
+            </button>
+            <button>
+               <a href="#" class="fas fa-shopping-cart"></a>
+            </button>
+       </div>
+       <div class="item"><img src="images/kitem2.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
+           <p><b>Baby Heart Set</b></p>
+           <span style="color: darkgreen;"><b>10,00£</b></span>
+           <button>
+               <a href="#" class="fas fa-heart"></a>
+            </button>
+            <button>
+               <a href="#" class="fas fa-shopping-cart"></a>
+            </button>
+       </div>
+       <div class="item"><img src="images/mitem3.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
+           <p><b>Jogging Set </b></p>
+           <span style="color: darkgreen;"><b>12,50£</b></span>
+           <button>
+               <a href="#" class="fas fa-heart"></a>
+            </button>
+            <button>
+               <a href="#" class="fas fa-shopping-cart"></a>
+            </button>
+       </div>
+       <div class="item"><img src="images/kitem1.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
+        <p><b>Pink Dress / Girls </b></p>
+        <span style="color: darkgreen;"><b>15,00£</b></span>
+        <button>
+           <a href="#" class="fas fa-heart"></a>
+        </button>
+        <button>
+           <a href="#" class="fas fa-shopping-cart"></a>
+        </button>
+   </div>
+   <div class="item"><img src="images/kitem2.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
+       <p><b>Baby Heart Set</b></p>
+       <span style="color: darkgreen;"><b>10,00£</b></span>
+       <button>
+           <a href="#" class="fas fa-heart"></a>
+        </button>
+        <button>
+           <a href="#" class="fas fa-shopping-cart"></a>
+        </button>
+   </div>
+   <div class="item"><img src="images/mitem3.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
+       <p><b>Jogging Set </b></p>
+       <span style="color: darkgreen;"><b>12,50£</b></span>
+       <button>
+           <a href="#" class="fas fa-heart"></a>
+        </button>
+        <button>
+           <a href="#" class="fas fa-shopping-cart"></a>
+        </button>
+   </div>
+   <div class="item"><img src="images/kitem1.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
+    <p><b>Pink Dress / Girls </b></p>
+    <span style="color: darkgreen;"><b>15,00£</b></span>
+    <button>
+       <a href="#" class="fas fa-heart"></a>
+    </button>
+    <button>
+       <a href="#" class="fas fa-shopping-cart"></a>
+    </button>
+</div>
+<div class="item"><img src="images/kitem2.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
+   <p><b>Baby Heart Set</b></p>
+   <span style="color: darkgreen;"><b>10,00£</b></span>
+   <button>
+       <a href="#" class="fas fa-heart"></a>
+    </button>
+    <button>
+       <a href="#" class="fas fa-shopping-cart"></a>
+    </button>
+</div>
+<div class="item"><img src="images/mitem3.jpg.jpeg"alt="image introuvable" width="300px" height="350px">
+   <p><b>Jogging Set </b></p>
+   <span style="color: darkgreen;"><b>12,50£</b></span>
+   <button>
+       <a href="#" class="fas fa-heart"></a>
+    </button>
+    <button>
+       <a href="#" class="fas fa-shopping-cart"></a>
+    </button>
+</div>
+       
     </div>          
     <footer>
         
