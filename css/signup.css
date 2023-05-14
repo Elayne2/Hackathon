@@ -18,6 +18,7 @@ header{
     align-items: center;
     justify-content: space-between;
     box-shadow: 0rem 0.2rem rgb(245, 196, 187);
+    z-index: 1;
 }
 footer{
     background-color:rgb(245, 196, 187);
@@ -100,7 +101,7 @@ span{
     margin-left: 10px;
 }
 .icons a:hover{
-    color: var(--white);
+    color: white;
 }
 form{
     border:3px solid rgb(245, 196, 187) ;
@@ -174,7 +175,6 @@ input{
     margin-left: 60px;
 }
 .form{
-
     display: flex;
     align-items: center;
     min-height: 100vh;

@@ -18,6 +18,7 @@ header{
     align-items: center;
     justify-content: space-between;
     box-shadow: 0rem 0.2rem rgb(245, 196, 187);
+    z-index: 100;
 }
 footer{
     background-color:rgb(245, 196, 187);
@@ -38,7 +39,7 @@ body{
     background-position: center;
 }
 html{
-    font-size: 88%;
+    font-size: 55%;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem ;
     overflow: hidden;
@@ -97,23 +98,42 @@ span{
 .icons a{
     font-size: 15px;
     color:black;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .icons a:hover{
-    color: var(--white);
+    color: white;
+}
+#toggler{
+    display:none
+}
+.fa-bars{
+    font-size:15px;
+    margin: 5px;
+    color: black;
+    border-radius: 20px;
+    border:2px solid black;
+    padding: 15px;
+    cursor: pointer;
+    display: none;
+}
+.fa-bars:hover{
+    color: white;
 }
 h2{
     font-size: 50px;
     margin-top: 80px;
+}
+a{
+    font-family: initial;
+    font-size: 30px;
 }
 p{
     font-size: 30px;
 }
 .content{
     width: 100%;
-    position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(250px);
     text-align: center;
     color: black;
 }
