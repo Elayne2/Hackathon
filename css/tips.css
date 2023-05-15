@@ -114,7 +114,7 @@ h3{
     border:5px solid rgb(245, 196, 187) ;
     margin: 5px;
     width:800px;
-    height: 270px;
+    height: 350px;
     position: relative;
     left: 320px;
     top: 150px;
@@ -122,6 +122,10 @@ h3{
     box-shadow: 2px 2pxrgba(101, 243, 193, 0.788);
     background-color:rgb(235, 233, 233);
     padding: 25px;
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: repeat(autofill);
+    display: inline-flex;
 }
 .r{
     border:5px solid rgb(245, 196, 187) ;
@@ -135,12 +139,16 @@ h3{
     box-shadow: 2px 2pxrgba(101, 243, 193, 0.788);
     background-color:rgb(235, 233, 233);
     padding: 25px;
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: repeat(autofill);
+    display: inline-flex;
 }
 .m{
     border:5px solid rgb(245, 196, 187) ;
-    margin-bottom: 20px;
     width:800px;
-    height: 150px;
+    height: 200px;
+    margin-bottom: 15%;
     position: relative;
     left: 320px;
     top: 150px;
@@ -148,5 +156,13 @@ h3{
     box-shadow: 2px 2pxrgba(101, 243, 193, 0.788);
     background-color:rgb(235, 233, 233);
     padding: 25px;
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: repeat(autofill);
+    display: inline-flex;
 
+}
+p{
+    font-family: initial;
+    font-size: 20px;
 }

@@ -112,6 +112,7 @@ span{
  grid-gap: 100px;
  grid-template-columns: repeat(autofill);
  display: inline-flex;
+ margin-bottom: 15%;
 }
 .item{
  height: 350px;
